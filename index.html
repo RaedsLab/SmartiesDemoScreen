@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SmartMarket</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href='css/google.css' rel='stylesheet' type='text/css'>
+        <script src="js/jquery-1.8.3.min.js"></script>
+        <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1200);
+                });
+            });
+        </script>
+        <!---End-smoth-scrolling----
+        <!------ Light Box ------>
+        <link rel="stylesheet" href="css/swipebox.css">
+        <script src="js/jquery.swipebox.min.js"></script> 
+        <script type="text/javascript">
+            jQuery(function ($) {
+                $(".swipebox").swipebox();
+            });
+        </script>
+        <!------ Eng Light Box ------>	
+
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <script src="js/modernizr.custom.js"></script>
+
+
+    </head>
+    <body>
+        <!-- header -->
+        <div class="header" id="home">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img width="120" src="images/logo.png"></a>
+                </div>
+                <h1 style="color: white; font-weight: bolder; text-align: center; margin-left: 50px; text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);" class="center-bloc">SMARTIES</h1>
+
+            </div>
+        </div>
+        <div class="content">
+            <div class="services-section" id="services">
+                <div class="container">
+                    <div class="cbp-spmenu-push">
+                        <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s2">
+                            <div class="logo1">
+                                <a href="index.html"><img width="100" src="images/logo1.png"></a>
+                            </div>
+                            <ul>
+                                <li><a href="index.html" class="scroll">Home</a></li>
+                                <li><a href="#services" class="scroll">A Smarter Market</a></li>
+                                <li><a href="#video" class="scroll">Video</a></li>
+                                <li><a href="#about" class="scroll">About</a></li> 
+                                <li><a href="#portfolio" class="scroll">Check The Work</a></li>
+                                <li><a href="#team" class="scroll">Meet The Team</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="main">
+                            <section>
+                                <button id="showRight"><img src="images/nav.png"></button>
+                            </section>
+                        </div>
+                    </div>
+                    <script src="js/classie.js"></script>
+                    <script>
+            var menuRight = document.getElementById('cbp-spmenu-s2'),
+                    showRight = document.getElementById('showRight'),
+                    body = document.body;
+
+            showRight.onclick = function () {
+                classie.toggle(this, 'active');
+                classie.toggle(menuRight, 'cbp-spmenu-open');
+                disableOther('showRight');
+            };
+
+            function disableOther(button) {
+                if (button !== 'showRight') {
+                    classie.toggle(showRight, 'disabled');
+                }
+            }
+                    </script>
+                    <div class="services-header">
+                        <h1>Smarties | For a smarter market</h1>
+                        <p>We revolutionize the supermarket experience</p>
+                    </div>
+                    <div class="services-grids">
+                        <div class="col-md-4 services-grid">
+                            <img src="images/icon1.png">
+                            <h3>Development</h3>
+                            <p>Written in open-standards, the code running SmartMarket is an example of clarity and efficacy.</p>
+                        </div>
+                        <div class="col-md-4 services-grid">
+                            <img src="images/icon2.png">
+                            <h3>Design</h3>
+                            <p>Our platform is designed to integrate seamlessly with existing platforms.</p>
+                        </div>
+                        <div class="col-md-4 services-grid">
+                            <img src="images/icon3.png">
+                            <h3>Analytics</h3>
+                            <p>We provide unprecedented analytics, data and insights.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 100px; min-height: 100px; background-color: #0d77b6; "></div>
+
+
+            <!-- VIDEO -->
+            <div class="container"  id="video">
+                <div class="row"> 
+                    <div class="services-header">
+                        <h1>Demo Video</h1>
+                    </div>
+                    <video height="500" class="col-lg-12" controls="controls">
+                        <source src="http://www.w3schools.com/html/movie.mp4" type="video/mp4">
+                        <source src="movie.ogg" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- ./VIDEO -->
+            <div class="about-section" id="about">
+                <div class="container">
+                    <div class="about-grids">
+                        <div class="col-md-6 left-grid">
+                            <img src="images/platforms.jpg">
+                        </div>
+                        <div class="col-md-6 right-grid">
+                            <h4>Designed for diversity</h4>
+                            <p>
+                                We noticed that shopping has become a difficult 
+                                and dull task for clients. Moreover, people are 
+                                getting immune to standardized expensive advertising.<br>
+                                SmartMarket offers a multi-platform solution for both 
+                                clients and marketers, the solution works on most
+                                platforms. It offers tailored suggestions for shoppers 
+                                and invaluable insights for marketers.
+                            </p>
+
+                            <div class="buttons">
+                                <a class="button1 hvr-shutter-in-vertical" href="#team">Meet the team</a>
+                                <a class="button2 hvr-shutter-in-vertical" href="#">learn more</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-section" id="portfolio">
+                <div class="container">
+                    <div class="portfolio-header">
+                        <h3>Check the work</h3>
+                        <p>You can find below the different codebases for the SmartMarket modules.</p>
+                    </div>
+                    <div id="portfoliolist">
+                        <div class="portfolio">
+                            <div class="portfolio-wrapper grid_box">		
+                                <img src="images/cloud-icon.png" 
+                                     class="img-responsive" alt="">
+                                <div class="portfolio-info">
+                                    <h3>OData REST API</h3>
+                                    <img src="images/leftarrow.png">
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </div>
+                        </div>				
+                        <div class="portfolio">
+                            <div class="portfolio-wrapper grid_box">		
+                                <img src="images/stat.png" class="img-responsive" alt="">
+                                <div class="portfolio-info">
+                                    <h3>Administration Panel</h3>
+                                    <img src="images/leftarrow.png">
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>					
+                        <div class="portfolio">
+                            <div class="portfolio-wrapper grid_box">		
+                                <img src="images/mobile.png" class="img-responsive" alt="">
+
+                                <div class="portfolio-info">
+                                    <h3>Cross-platform mobile app</h3>
+                                    <img src="images/leftarrow.png">
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="portfolio">						
+                            <div class="portfolio-wrapper grid_box">		
+                                <img src="images/Cart-icon.png" class="img-responsive" alt="">
+                                <div class="portfolio-info">
+                                    <h3>Shopping-card Pad</h3>
+                                    <img src="images/leftarrow.png">
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                        </div>			
+                        <div class="portfolio">
+                            <div class="portfolio-wrapper grid_box">		
+                                <img src="images/cart-icon-embeded.png" class="img-responsive" alt="">
+                                <div class="portfolio-info">
+                                    <h3>Shopping-card embedded</h3>
+                                    <img src="images/leftarrow.png">
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="portfolio">
+                            <div class="portfolio-wrapper grid_box">		
+                                <img src="images/bulb-icon.png" class="img-responsive" alt="">
+                                <div class="portfolio-info">
+                                    <h3>Energy saving module</h3>
+                                    <img src="images/leftarrow.png">
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="clearfix"></div>					
+                    </div>
+                    <!-- Script for gallery Here -->
+                    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+                    <script type="text/javascript">
+            $(function () {
+
+                var filterList = {
+                    init: function () {
+
+// MixItUp plugin
+// http://mixitup.io
+                        $('#portfoliolist').mixitup({
+                            targetSelector: '.portfolio',
+                            filterSelector: '.filter',
+                            effects: ['fade'],
+                            easing: 'snap',
+                            // call the hover effect
+                            onMixEnd: filterList.hoverEffect()
+                        });
+
+                    },
+                    hoverEffect: function () {
+
+// Simple parallax effect
+                        $('#portfoliolist .portfolio').hover(
+                                function () {
+                                    $(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+                                    $(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');
+                                },
+                                function () {
+                                    $(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+                                    $(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');
+                                }
+                        );
+
+                    }
+
+                };
+
+// Run the show!
+                filterList.init();
+
+
+            });
+                    </script>
+                    <!-- Gallery Script Ends -->
+
+
+
+                    <div class="arrow">
+                        <a href="#about" class="scroll"><img src="images/arrow.png" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 100px; min-height: 100px; background-color: #0d77b6;"></div>
+
+            <div id="team" class="services-header">
+                <h1>Meet the team</h1>
+            </div>
+            <!-- Team Members Row -->
+
+            <div class="container">
+
+                <div style="padding: 20px;"  class="row">
+                    <div  class="col-lg-4 col-sm-6 text-center">
+                        <img style="margin-left: 70px" class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+                        <h3>Ameni Meraï<br>
+                            <small>Mobile Guru</small>
+                        </h3>
+                    </div>
+
+                    <div  class="col-lg-4 col-sm-6 text-center">
+                        <img style="margin-left: 70px" class="img-circle img-responsive img-center" src="images/balha.jpg" alt="">
+                        <h3>Abdelhedi Belghith<br>
+                            <small>Machine Vision Expert</small>
+                        </h3>
+                    </div>
+
+                    <div  class="col-lg-4 col-sm-6 text-center">
+                        <img style="margin-left: 70px" class="img-circle img-responsive img-center" src="images/bilel.jpg" alt="">
+                        <h3>Bilel Nasri<br>
+                            <small>Ratchet Specialist</small>
+                        </h3>
+                    </div>
+                </div>
+                <!-- Ligne -->
+                <div style="padding: 20px;"  class="row">
+                    <div  class="col-lg-4 col-sm-6 col-lg-offset-2 text-center">
+                        <img style="margin-left: 70px" class="img-circle img-responsive img-center"
+                             src="images/amine.jpg" alt="">
+                        <h3>Amine Ben Hassouna<br>
+                            <small>Electronics Hacker</small>
+                        </h3>
+                    </div>
+
+                    <div  class="col-lg-4 col-sm-6 text-center">
+                        <img style="margin-left: 70px" class="img-circle img-responsive img-center" src="images/raed.jpg" alt="">
+                        <h3>Raed Chammem<br>
+                            <small>Web Ninja</small>
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div style="height: 100px; min-height: 100px; "></div>
+
+
+        </div>
+        <div class="footer-section">
+            <div class="container">
+                <div class="footer-left">
+                    <p>Copyleft <script>document.write(new Date().getFullYear())</script>
+                    </p>
+                </div>
+
+                <div class="clearfix" ></div>
+
+
+                <div style="max-width: 300px;" class="footer-right">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+                </div>
+
+                <div class="clearfix"></div>
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        $().UItoTop({easingType: 'easeOutQuart'});
+                    });
+                </script>
+                <a class="scroll" href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+            </div>				
+        </div>
+
+
+    </body>
+</html>
